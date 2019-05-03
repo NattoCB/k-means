@@ -1,10 +1,10 @@
 ## k-means Algorithm ## 
 
-               					Author: Jasper Fang
-							Python version: 3.0
-							Matplotlib version: 3.0.3
-							Numpy version: 1.16.2
-							IDE: Sublime 3
+               									Author: Jasper Fang
+											Python version: 3.0
+											Matplotlib version: 3.0.3
+											Numpy version: 1.16.2
+											IDE: Sublime 3
 
 
 
