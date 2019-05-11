@@ -323,22 +323,22 @@ if __name__ == '__main__':
 
     # load, integrate animals, fruits, countries, veggies, with lables
     data = dataGet_Integrate(norm=False)  # QUESTION 1,2,4,6
-    question2 = K_Means(dataSet=data,itr=10,distMethod='distEuclid')
-    question2.do_k_1_to_10_test() # from k=1 to 10, generate a list of results
+    kTest = K_Means(dataSet=data,itr=10,distMethod='distEuclid')
+    kTest.do_k_1_to_10_test() # from k=1 to 10, generate a list of results
 
 
-    print('list of k:\n',question2.K_List)
-    print('\nlist of precision:\n',question2.P_List)
-    print('\nlist of recall:\n',question2.R_List)
-    print('\nlist of f1-score:\n',question2.F_List)
-    print('\nlist of purity:\n',question2.purityList)
+    print('list of k:\n',kTest.K_List)
+    print('\nlist of precision:\n',kTest.P_List)
+    print('\nlist of recall:\n',kTest.R_List)
+    print('\nlist of f1-score:\n',kTest.F_List)
+    print('\nlist of purity:\n',kTest.purityList)
 
-    print('\nthe best k is: {}'.format(question2.k_best))
+    print('\nthe best k is: {}'.format(kTest.k_best))
     
-    print('\nBest co-oc metrix when k=4:\n',question2.cm_4) # show the best co-oc metrix with highest P,R,F when k=4
+    print('\nBest co-oc metrix when k=4:\n',kTest.cm_4) # show the best co-oc metrix with highest P,R,F when k=4
 
     print()
-    question2.visualise()
+    kTest.visualise()
  
 
 
